@@ -5,31 +5,52 @@ body {
   background-color: black;
   color: black;
 }
-#search-btn {
-  padding: 2px;
-  margin-left: 10px;
-  background-color: white;
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
   border: none;
+}
+#search-btn {
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: pink;
+  border: none;
+  color: black;
+  font-weight: 500;
+}
+#cities {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px 5px 0px 15px;
+  background-color: pink;
+  border: none;
+  color: black;
+  font-weight: 500;
 }
 .title {
   text-align: center;
   font-size: 54px;
+  color: pink;
 }
 .weather-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
 }
 .weather-box {
   display: flex;
+  width: 250px;
+  height: 300px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  border: 5px solid pink;
   border-radius: 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   padding: 100px;
 }
 #location {
@@ -48,8 +69,8 @@ body {
   width: 50px;
 }
 .fiveContainer {
-  width: 75%;
-  background-color: white;
+  width: 100%;
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -57,16 +78,19 @@ body {
   align-items: center;
 }
 .fivedayCard {
-  width: 75%;
-  height: 50px;
-  background-color: white;
-  border: 1px solid black 5;
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px 30px 10px 30px;
+  background-color: pink;
+  border: 5px solid white;
+  border-radius: 10px;
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
+  align-items: space-around;
+  justify-content: flex-end;
 }
-/* Days of the week */
+/* Days of the week for 5 days*/
 .dayCardDay {
   font-weight: 500;
   font-size: 20px;
