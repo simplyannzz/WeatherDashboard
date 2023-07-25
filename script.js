@@ -50,22 +50,16 @@ function getWeatherData(location) {
             recentCities()
 
         })
-
-
 }
 // update data from API
 function weatherApp(weatherData) {
-
-
-
 }
-
 
 // update API to buttons
 const searchBar = document.querySelector("#search-bar");
 const searchBtn = document.querySelector("#search-btn");
 
-// HOW TO CONNECT SEARCH BAR WITH THE BUTTON then update it to div
+
 searchBtn.addEventListener("click", function (event) {
     event.preventDefault();
     const location = searchBar.value.trim();
@@ -86,17 +80,21 @@ function recentCities() {
 function renderRecentCities(cityHistory) {
     for (var i = 0; i < cityHistory.length; i++) {
         console.log(cityHistory)
-        var li = document.createElement("li")
+        var li = document.createElement("button")
         li.textContent = cityHistory[i]
         li.className += "historyBtn"
         var historyContainer = document.querySelector(".searchSearch")
         historyContainer.appendChild(li)
     }
 
-    // event
-    // searchBtn.addEventListener("click", function (event) {
-    //     event.preventDefault();
-    //     const location = searchBar.value.trim();
-    //     getWeatherData(location)
-
 };
+// Ciites history search button ( Cant get it to work)
+//    when we click on the history btn then it loads to the city clicked data
+const historyBtn = document.querySelector(".historyBtn");
+
+historyBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    const location = historyBtn.value();
+    getWeatherData(location)
+
+});
