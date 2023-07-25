@@ -32,7 +32,7 @@ https://javascript.plainenglish.io/build-a-real-time-weather-app-with-javascript
 MIT License
 
 ## Deployed
-
+https://simplyannzz.github.io/WeatherDashboard/
 ## contact me
 
 email: anniebui0110@gmail.com
