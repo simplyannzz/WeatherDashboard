@@ -90,11 +90,11 @@ function renderRecentCities(cityHistory) {
 };
 // Ciites history search button ( Cant get it to work)
 //    when we click on the history btn then it loads to the city clicked data
-const historyBtn = document.querySelector(".historyBtn");
 
-historyBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    const location = historyBtn.value();
-    getWeatherData(location)
+// const historyBtn = document.querySelector(".historyBtn");
+// historyBtn.addEventListener("click", function (event) {
+//     event.preventDefault();
+//     const location = historyBtn.value();
+//     getWeatherData(location)
 
-});
+// });
