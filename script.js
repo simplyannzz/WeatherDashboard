@@ -1,7 +1,7 @@
 // Get API
 function getWeatherData(location) {
     const apiKey = "2254cc26003e03a0b9a25cb5a3066195";
-    const url = `http://api.openweathermap.org/data/2.5/forecast?q=${location}&units=imperial&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=imperial&appid=${apiKey}`;
     return fetch(url)
         .then(response => response.json())
         .then(data => {
